@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="24224">
+    <page number="0" size="24384">
         <constant name="accelEnrichmentMode">"MS Adder"</constant>
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
@@ -3853,55 +3853,159 @@ end</constant>
         <constant digits="0" name="tcu_pc_solenoid_freq" units="Hz">0.0</constant>
         <constant name="tcu_pc_solenoid_pin">"NONE"</constant>
         <constant name="tcu_pc_solenoid_pin_mode">"default"</constant>
-        <constant cols="1" digits="0" name="tcu_pcAirmassBins" rows="2" units="Airmass">
+        <constant cols="1" digits="0" name="tcu_pcAirmassBins" rows="10" units="Airmass">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals1" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals1" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals12" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals12" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals2" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals2" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals21" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals21" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals23" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals23" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals3" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals3" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals32" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals32" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals34" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals34" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals4" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals4" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals43" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcVals43" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcValsN" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcValsN" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcValsR" rows="2" units="%">
+        <constant cols="1" digits="0" name="tcu_pcValsR" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
@@ -4013,32 +4117,88 @@ end</constant>
 </constant>
         <constant digits="1" name="tcu_rangeSensorBiasResistor" units="Ohm">0.0</constant>
         <constant name="tcu_rangeSensorPulldown">"false"</constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed12" rows="2" units="kmh">
+        <constant cols="1" digits="0" name="tcu_shiftSpeed12" rows="10" units="kmh">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed21" rows="2" units="kmh">
+        <constant cols="1" digits="0" name="tcu_shiftSpeed21" rows="10" units="kmh">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed23" rows="2" units="kmh">
+        <constant cols="1" digits="0" name="tcu_shiftSpeed23" rows="10" units="kmh">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed32" rows="2" units="kmh">
+        <constant cols="1" digits="0" name="tcu_shiftSpeed32" rows="10" units="kmh">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed34" rows="2" units="kmh">
+        <constant cols="1" digits="0" name="tcu_shiftSpeed34" rows="10" units="kmh">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed43" rows="2" units="kmh">
+        <constant cols="1" digits="0" name="tcu_shiftSpeed43" rows="10" units="kmh">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
-        <constant cols="1" digits="2" name="tcu_shiftTpsBins" rows="2" units="%">
+        <constant cols="1" digits="2" name="tcu_shiftTpsBins" rows="10" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
 </constant>
@@ -5005,7 +5165,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20251209" nPages="1" signature="rusEFI main.2025.12.17.RusEFI_34P.1301291227" version="5.0"/>
+    <versionInfo firmwareInfo="20251209" nPages="1" signature="rusEFI main.2025.12.17.RusEFI_34P.3869860577" version="5.0"/>
     <bibliography author="rusEFI 20251209" writeDate="date"/>
     <settings/>
     <userComments/>
