@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="24412">
+    <page number="0" size="24224">
         <constant name="accelEnrichmentMode">"MS Adder"</constant>
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
@@ -1208,11 +1208,7 @@
 </constant>
         <constant digits="0" name="gapTrackingLengthOverride" units="count">0.0</constant>
         <constant digits="0" name="gapVvtTrackingLengthOverride" units="count">0.0</constant>
-        <constant cols="1" digits="1" name="gearBasedOpenLoopBoostAdder" rows="10" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="1" name="gearBasedOpenLoopBoostAdder" rows="6" units="%">
          0.0
          0.0
          0.0
@@ -1222,15 +1218,11 @@
 </constant>
         <constant name="gearControllerMode">"None"</constant>
         <constant digits="2" name="gearRatio1" units="ratio">0.0</constant>
-        <constant digits="2" name="gearRatio10" units="ratio">0.0</constant>
         <constant digits="2" name="gearRatio2" units="ratio">0.0</constant>
         <constant digits="2" name="gearRatio3" units="ratio">0.0</constant>
         <constant digits="2" name="gearRatio4" units="ratio">0.0</constant>
         <constant digits="2" name="gearRatio5" units="ratio">0.0</constant>
         <constant digits="2" name="gearRatio6" units="ratio">0.0</constant>
-        <constant digits="2" name="gearRatio7" units="ratio">0.0</constant>
-        <constant digits="2" name="gearRatio8" units="ratio">0.0</constant>
-        <constant digits="2" name="gearRatio9" units="ratio">0.0</constant>
         <constant digits="0" name="globalTriggerAngleOffset" units="deg btdc">80.0</constant>
         <constant digits="0" name="gppwm1_dutyIfError" units="%">0.0</constant>
         <constant name="gppwm1_loadAxis">"MAP"</constant>
@@ -3770,133 +3762,55 @@ end</constant>
         <constant digits="0" name="tcu_pc_solenoid_freq" units="Hz">0.0</constant>
         <constant name="tcu_pc_solenoid_pin">"NONE"</constant>
         <constant name="tcu_pc_solenoid_pin_mode">"default"</constant>
-        <constant cols="1" digits="0" name="tcu_pcAirmassBins" rows="8" units="Airmass">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcAirmassBins" rows="2" units="Airmass">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals1" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals1" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals12" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals12" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals2" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals2" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals21" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals21" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals23" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals23" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals3" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals3" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals32" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals32" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals34" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals34" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals4" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals4" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcVals43" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcVals43" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcValsN" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcValsN" rows="2" units="%">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_pcValsR" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_pcValsR" rows="2" units="%">
          0.0
          0.0
 </constant>
@@ -4008,89 +3922,39 @@ end</constant>
 </constant>
         <constant digits="1" name="tcu_rangeSensorBiasResistor" units="Ohm">0.0</constant>
         <constant name="tcu_rangeSensorPulldown">"false"</constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed12" rows="8" units="kmh">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_shiftSpeed12" rows="2" units="kmh">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed21" rows="8" units="kmh">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_shiftSpeed21" rows="2" units="kmh">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed23" rows="8" units="kmh">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_shiftSpeed23" rows="2" units="kmh">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed32" rows="8" units="kmh">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_shiftSpeed32" rows="2" units="kmh">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed34" rows="8" units="kmh">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_shiftSpeed34" rows="2" units="kmh">
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="0" name="tcu_shiftSpeed43" rows="8" units="kmh">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="0" name="tcu_shiftSpeed43" rows="2" units="kmh">
          0.0
          0.0
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
-        <constant cols="1" digits="2" name="tcu_shiftTpsBins" rows="8" units="%">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant cols="1" digits="2" name="tcu_shiftTpsBins" rows="2" units="%">
          0.0
          0.0
 </constant>
         <constant name="tcu_solenoid1">"NONE"</constant>
         <constant name="tcu_solenoid2">"NONE"</constant>
-        <constant name="tcu_solenoid3">"NONE"</constant>
-        <constant name="tcu_solenoid4">"NONE"</constant>
-        <constant name="tcu_solenoid5">"NONE"</constant>
-        <constant name="tcu_solenoid6">"NONE"</constant>
         <constant name="tcu_solenoid_mode1">"default"</constant>
         <constant name="tcu_solenoid_mode2">"default"</constant>
-        <constant name="tcu_solenoid_mode3">"default"</constant>
-        <constant name="tcu_solenoid_mode4">"default"</constant>
-        <constant name="tcu_solenoid_mode5">"default"</constant>
-        <constant name="tcu_solenoid_mode6">"default"</constant>
         <constant name="tcu_tcc_onoff_solenoid">"NONE"</constant>
         <constant name="tcu_tcc_onoff_solenoid_mode">"default"</constant>
         <constant name="tcu_tcc_pwm_solenoid">"NONE"</constant>
@@ -4131,13 +3995,9 @@ end</constant>
         <constant name="tcuEnabled">"disabled"</constant>
         <constant name="tcuInputSpeedSensorPin">"NONE"</constant>
         <constant digits="0" name="tcuInputSpeedSensorTeeth" units="">1.0</constant>
-        <constant cols="10" digits="0" name="tcuSolenoidTable" rows="6" units="onoff">
-         99.0 1.0 2.0 3.0 4.0 5.0 0.0 0.0 0.0 0.0
-         10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0
-         20.0 21.0 22.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         30.0 31.0 0.0 33.0 0.0 0.0 0.0 0.0 0.0 0.0
-         40.0 41.0 0.0 0.0 44.0 0.0 0.0 0.0 0.0 0.0
-         50.0 51.0 0.0 0.0 0.0 55.0 0.0 0.0 0.0 0.0
+        <constant cols="6" digits="0" name="tcuSolenoidTable" rows="2" units="onoff">
+         99.0 1.0 2.0 3.0 4.0 5.0
+         10.0 11.0 12.0 13.0 14.0 15.0
 </constant>
         <constant name="tcuUpshiftButtonPin">"NONE"</constant>
         <constant name="tcuUpshiftButtonPinMode">"DEFAULT"</constant>
@@ -5054,7 +4914,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20251209" nPages="1" signature="rusEFI main.2025.12.17.RusEFI_34P.992321304" version="5.0"/>
+    <versionInfo firmwareInfo="20251209" nPages="1" signature="rusEFI main.2025.12.17.RusEFI_34P.1301291227" version="5.0"/>
     <bibliography author="rusEFI 20251209" writeDate="date"/>
     <settings/>
     <userComments/>
