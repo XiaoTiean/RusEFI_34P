@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "defaults.h"
-#include "hellen_meta.h"
-#include "honda_k_dbc.h"
+#include "34P_meta.h"
 #include "board_overrides.h"
 
 Gpio getCommsLedPin() {
