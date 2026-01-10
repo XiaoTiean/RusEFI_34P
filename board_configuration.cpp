@@ -42,7 +42,26 @@ static void customBoardDefaultConfiguration() {
 
 	engineConfiguration->clt.config.bias_resistor = 2400;
 	engineConfiguration->iat.config.bias_resistor = 2400;
+
+	
 }
+
+static Gpio 34P_OUTPUTS[] = {
+34P_LSHC_1,
+34P_LSHC_2,
+34P_LSHC_3,
+34P_LSHC_4,
+34P_LSHV_1,
+34P_LSHV_2,
+34P_LSHV_3,
+34P_LSHV_4,
+34P_GPIO_1,
+34P_GPIO_2,
+34P_GPIO_3,
+34P_GPIO_4,
+34P_GPIO_5,
+34P_GPIO_6,
+};
 
 void setup_custom_board_overrides() {
     custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
