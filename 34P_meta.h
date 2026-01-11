@@ -1,3 +1,4 @@
+#pragma once
 //LSHC = Low side high current (1A continue on Rusefi_34P1)
 #define 34P_LSHC_1 E10
 #define 34P_LSHC_2 E9
