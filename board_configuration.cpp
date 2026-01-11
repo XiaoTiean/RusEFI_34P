@@ -17,9 +17,16 @@ Gpio getWarningLedPin() {
 
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
-    // engineConfiguration->injectionPins[0] = Gpio::F13;
-    // engineConfiguration->ignitionPins[0] = Gpio::E15;
-
+    engineConfiguration->injectionPins[0] = Gpio::34P_LSHC_1;
+	engineConfiguration->injectionPins[1] = Gpio::34P_LSHC_2;
+	engineConfiguration->injectionPins[2] = Gpio::34P_LSHC_3;
+	engineConfiguration->injectionPins[3] = Gpio::34P_LSHC_4;
+	
+    engineConfiguration->ignitionPins[0] = Gpio::34P_LSHV_1;
+	engineConfiguration->ignitionPins[1] = Gpio::34P_LSHV_2;
+	engineConfiguration->ignitionPins[2] = Gpio::34P_LSHV_3;
+	engineConfiguration->ignitionPins[3] = Gpio::34P_LSHV_4;
+	
 //  engineConfiguration->triggerInputPins[0] = Gpio::B1;
 //	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
