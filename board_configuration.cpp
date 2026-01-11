@@ -44,7 +44,7 @@ static void customBoardDefaultConfiguration() {
 
 	
 }
-
+/**
 static Gpio 34P_OUTPUTS[] = {
 34P_LSHC_1,
 34P_LSHC_2,
@@ -61,7 +61,7 @@ static Gpio 34P_OUTPUTS[] = {
 34P_GPIO_5,
 34P_GPIO_6,
 };
-
+*/
 void setup_custom_board_overrides() {
     custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
 }
