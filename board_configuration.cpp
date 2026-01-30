@@ -17,15 +17,42 @@ Gpio getWarningLedPin() {
 
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
-    engineConfiguration->injectionPins[0] = Gpio::P34_LSHC_1;
-	engineConfiguration->injectionPins[1] = Gpio::P34_LSHC_2;
-	engineConfiguration->injectionPins[2] = Gpio::P34_LSHC_3;
-	engineConfiguration->injectionPins[3] = Gpio::P34_LSHC_4;
+    engineConfiguration->injectionPins[0] = Gpio::Unassigned;
+	engineConfiguration->injectionPins[1] = Gpio::Unassigned;
+	engineConfiguration->injectionPins[2] = Gpio::Unassigned;
+	engineConfiguration->injectionPins[3] = Gpio::Unassigned;
 	
-    engineConfiguration->ignitionPins[0] = Gpio::P34_LSHV_1;
-	engineConfiguration->ignitionPins[1] = Gpio::P34_LSHV_2;
-	engineConfiguration->ignitionPins[2] = Gpio::P34_LSHV_3;
-	engineConfiguration->ignitionPins[3] = Gpio::P34_LSHV_4;
+    engineConfiguration->ignitionPins[0] = Gpio::Unassigned;
+	engineConfiguration->ignitionPins[1] = Gpio::Unassigned;
+	engineConfiguration->ignitionPins[2] = Gpio::Unassigned;
+	engineConfiguration->ignitionPins[3] = Gpio::Unassigned;
+//====================================================================//
+	#ifdef EFI_KLINE
+    if (!engineConfiguration->enableKline) {
+        return;
+    }
+#if EFI_PROD_CODE
+    efiSetPadMode("K-Line UART RX", Gpio::A10, PAL_MODE_ALTERNATE(TS_SERIAL_AF));
+    efiSetPadMode("K-Line UART TX", Gpio::A9, PAL_MODE_ALTERNATE(TS_SERIAL_AF));
+#endif /* EFI_PROD_CODE */
+ 
+    static SerialConfig cfg = {
+        #if EFI_PROD_CODE
+            .speed = 0,
+            .cr1 = 0,
+            .cr2 = USART_CR2_STOP1_BITS | USART_CR2_LINEN,
+            .cr3 = 0
+        #endif // EFI_PROD_CODE
+    };
+ 
+    if (engineConfiguration->kLineBaudRate < 100)
+        engineConfiguration->kLineBaudRate = KLINE_BAUD_RATE;
+    cfg.speed = engineConfiguration->kLineBaudRate;
+ 
+    sdStart(klDriver, &cfg);
+#endif // EFI_KLINE
+	
+//====================================================================//
 	
 //  engineConfiguration->triggerInputPins[0] = Gpio::B1;
 //	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
